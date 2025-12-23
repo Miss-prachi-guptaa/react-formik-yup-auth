@@ -1,16 +1,70 @@
-# React + Vite
+### 🔐 Login and Registration forms built with React using **Formik** and **Yup** for schema-based validation.  
+The forms feature a clean, modern glassy UI with inline validation and improved UX.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Demo](#demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Mock API Setup](#mock-api-setup)
+- [Frontend](#frontend)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Demo
+**Registration Page** ![Register Page](https://github.com/user-attachments/assets/68668787-d80a-4bf6-9c27-a5657eaac1df)  
+**Login Page** ![Login Page](https://github.com/user-attachments/assets/7a26be8b-59a0-4166-b1d1-bd2e176c3624)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+## About Formik & Yup
+
+- **Formik**: A React library to manage form state, submission, and helpers with less boilerplate.  
+- **Yup**: A schema-based validation library to define rules and show inline errors automatically.  
+
+Together, they make building login & registration forms clean and easy.
+
+## Features
+- Login & Registration forms  
+- Form validation using **Yup** schemas  
+- Inline error messages  
+- Disabled submit button while submitting  
+- Glassmorphic UI with smooth transitions & animations  
+- Built using **React**, **Formik**, **TailwindCSS**, and **Framer Motion**
+
+---
+
+## Tech Stack
+- **Frontend:** React, Formik, Yup, TailwindCSS, Framer Motion  
+- **Mock Backend:** JSON Server
+
+---
+
+## Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/Miss-prachi-guptaa/react-formik-yup-auth.git
+cd react-formik-yup-auth
+npm install
+```
+
+## Mock API Setup
+
+1. We are using JSON Server as a mock API.
+  Install JSON Server globally (if not installed)
+```bash(terminal)
+npm install -g json-server
+```
+## Start the mock server:
+```bash(terminal)
+json-server --watch db.json --port 5000
+```
+## Frontend
+Start the React development server:
+```bash(terminal)
+npm run dev
