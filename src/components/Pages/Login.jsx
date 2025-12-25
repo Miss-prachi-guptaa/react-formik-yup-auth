@@ -37,7 +37,7 @@ export const Login = () => {
 
               if (foundUser) {
                 setStatus({ success: "Login successful 🎉" });
-                setTimeout(() => navigate("/"), 1000);
+                setTimeout(() => navigate("/HomePage"), 1000);
               } else {
                 setStatus({ error: "Invalid email or password ❌" });
               }
